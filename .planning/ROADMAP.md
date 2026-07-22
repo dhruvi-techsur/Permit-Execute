@@ -91,6 +91,14 @@ Plans:
   2. Admin can create, deactivate, and manage user accounts, and assign reviewers to permit applications
   3. Admin can view an audit log of all status changes and key actions across the system
   4. Every page passes WCAG 2.1 AA criteria: sufficient contrast ratios, full keyboard navigation, and meaningful screen-reader labels on all interactive elements
+**Plans**: 5 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — NestJS admin module: all 7 admin endpoints (PERM-07, ADMN-01, ADMN-02, ADMN-03) + integration tests
+- [ ] 05-02-PLAN.md — Admin data layer (types, API client, Zustand store) + All Applications page + Assign Reviewer modal + Playwright tests
+- [ ] 05-03-PLAN.md — Admin User Management page (create/edit/deactivate modals) + Playwright tests
+- [ ] 05-04-PLAN.md — Admin Audit Log page with date range + keyword filters + Playwright tests
+- [ ] 05-05-PLAN.md — WCAG 2.1 AA compliance: skip-nav, focus traps, aria-labels, form labels, axe-core Playwright tests
 
 ## Progress
 
