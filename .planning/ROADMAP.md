@@ -30,7 +30,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. User can reset a forgotten password via an email link
   4. API layer enforces role-based access — unauthenticated or wrong-role requests are rejected
   5. The interface uses a custom design system (color tokens, typography, spacing, shadows) — nothing looks like a default template
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Docker Compose dev stack + PostgreSQL schema migration + idempotent seed (3 roles)
+- [ ] 01-02-PLAN.md — Vite/React/TypeScript scaffold + full UX-05 design system (Tailwind tokens, typed constants)
+- [ ] 01-03-PLAN.md — NestJS backend scaffold + all 7 auth endpoints + integration test suite
+- [ ] 01-04-PLAN.md — Auth pages (Login, Register, Forgot/Reset Password) + shared UI components + Playwright tests
+- [ ] 01-05-PLAN.md — Zustand auth store + Axios interceptors + router + app shell (Sidebar + Header) + full e2e tests
 
 ### Phase 2: Applicant Core
 **Goal**: Applicants can submit a permit application, manage their supporting documents, and see their application's status on a visual lifecycle timeline
