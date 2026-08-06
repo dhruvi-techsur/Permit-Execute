@@ -3,14 +3,14 @@ pivota_spec_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-04-PLAN.md
-last_updated: "2026-08-06T00:46:00.236Z"
+stopped_at: Completed 01-03-PLAN.md
+last_updated: "2026-08-06T00:47:00.096Z"
 last_activity: 2026-07-21 — Roadmap created; all 5 phases defined with success criteria
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 26
-  completed_plans: 3
+  completed_plans: 4
   percent: 4
 ---
 
@@ -55,6 +55,7 @@ Progress: [░░░░░░░░░░] 4%
 | Phase 01-foundation P01 | 2min | 2 tasks | 7 files |
 | Phase 01-foundation P02 | 3 min | 2 tasks | 14 files |
 | Phase 01-foundation P04 | 3 min | 2 tasks | 14 files |
+| Phase 01-foundation P03 | 4 min | 2 tasks | 30 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: API calls in auth pages stubbed with TODO 01-05 comments — API wiring deferred to plan 01-05 by design
 - [Phase 01-foundation]: forwardRef on Input component to support react-hook-form register spread
 - [Phase 01-foundation]: @hookform/resolvers installed as blocking dependency missing from initial package.json
+- [Phase 01-foundation]: EmailService stubbed to console.log in dev (no SMTP dependency for Phase 1); real email delivery planned for Phase 2
+- [Phase 01-foundation]: JwtStrategy validates user on every request (findById DB lookup) to reject deactivated users even with valid JWTs
 
 ### Pending Todos
 
@@ -85,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-08-06T00:46:00.235Z
-Stopped at: Completed 01-04-PLAN.md
+Last session: 2026-08-06T00:47:00.094Z
+Stopped at: Completed 01-03-PLAN.md
 Resume file: None
