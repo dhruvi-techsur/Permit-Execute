@@ -3,14 +3,14 @@ pivota_spec_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-02-PLAN.md
-last_updated: "2026-08-06T00:39:06.929Z"
+stopped_at: Completed 01-04-PLAN.md
+last_updated: "2026-08-06T00:46:00.236Z"
 last_activity: 2026-07-21 — Roadmap created; all 5 phases defined with success criteria
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 26
-  completed_plans: 2
+  completed_plans: 3
   percent: 4
 ---
 
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 4%
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 2min | 2 tasks | 7 files |
 | Phase 01-foundation P02 | 3 min | 2 tasks | 14 files |
+| Phase 01-foundation P04 | 3 min | 2 tasks | 14 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: DATABASE_URL uses compose service name 'postgres' not localhost — Required for Docker Compose internal networking; localhost inside a container refers to the container itself
 - [Phase 01-foundation]: Design tokens centralized in tailwind.config.ts with TypeScript mirror in tokens.ts — one source of truth for both utility classes and JS logic
 - [Phase 01-foundation]: type:module added to frontend/package.json for ESM-native Vite setup (eliminates CJS deprecation warning)
+- [Phase 01-foundation]: API calls in auth pages stubbed with TODO 01-05 comments — API wiring deferred to plan 01-05 by design
+- [Phase 01-foundation]: forwardRef on Input component to support react-hook-form register spread
+- [Phase 01-foundation]: @hookform/resolvers installed as blocking dependency missing from initial package.json
 
 ### Pending Todos
 
@@ -81,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-08-06T00:39:06.928Z
-Stopped at: Completed 01-02-PLAN.md
+Last session: 2026-08-06T00:46:00.235Z
+Stopped at: Completed 01-04-PLAN.md
 Resume file: None
