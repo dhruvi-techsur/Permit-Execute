@@ -3,14 +3,14 @@ pivota_spec_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Completed 01-03-PLAN.md
-last_updated: "2026-08-06T00:47:00.096Z"
+stopped_at: Completed 01-05-PLAN.md
+last_updated: "2026-08-06T00:55:08.682Z"
 last_activity: 2026-07-21 — Roadmap created; all 5 phases defined with success criteria
 progress:
   total_phases: 5
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 26
-  completed_plans: 4
+  completed_plans: 5
   percent: 4
 ---
 
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 4%
 | Phase 01-foundation P02 | 3 min | 2 tasks | 14 files |
 | Phase 01-foundation P04 | 3 min | 2 tasks | 14 files |
 | Phase 01-foundation P03 | 4 min | 2 tasks | 30 files |
+| Phase 01-foundation P05 | 4 min | 2 tasks | 16 files |
 
 ## Accumulated Context
 
@@ -77,6 +78,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: @hookform/resolvers installed as blocking dependency missing from initial package.json
 - [Phase 01-foundation]: EmailService stubbed to console.log in dev (no SMTP dependency for Phase 1); real email delivery planned for Phase 2
 - [Phase 01-foundation]: JwtStrategy validates user on every request (findById DB lookup) to reject deactivated users even with valid JWTs
+- [Phase 01-foundation]: Circular dependency resolved via lazy require() in axios.ts interceptors — avoids ESM circular import between axios.ts and auth.store.ts
+- [Phase 01-foundation]: refreshAccessToken called through Zustand store from axios interceptor (not direct api.ts call) — centralizes token state management
 
 ### Pending Todos
 
@@ -88,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-08-06T00:47:00.094Z
-Stopped at: Completed 01-03-PLAN.md
+Last session: 2026-08-06T00:55:08.681Z
+Stopped at: Completed 01-05-PLAN.md
 Resume file: None
