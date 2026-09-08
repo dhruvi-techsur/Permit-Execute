@@ -30,3 +30,12 @@ waves:
 - Fix attempts: 1/3 — Vitest was picking up `e2e/auth.spec.ts` (Playwright file) due to missing exclude pattern; fixed by adding `e2e/**` and `**/*.spec.ts` exclusions to `vite.config.ts` test config → commit `4c02701`
 
 **Note:** Backend integration tests (in `test/`) require a live database — they are E2E tests deferred to verify phase per gate policy. No backend unit tests exist yet in this phase (only integration tests in Wave 2). `--passWithNoTests` applied correctly.
+
+## Backend pre-push gate
+
+- Status: skipped
+- Wave-gate coverage: INCOMPLETE — wave(s) 3 ran with no GATE.md entry
+- Result marker + failing output tail:
+```
+__GATE__ build_exit=-1 test_exit=-1 build_cmd=[none] test_cmd=[none] head=cb23ab8f76189bf216ad3209ce77d6557eb12672 test_files=6 skip_marks=0 shadow_files=0
+```
